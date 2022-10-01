@@ -7,7 +7,7 @@ export default ({ env }) => ({
         api_secret: env('CLOUDINARY_SECRET'),
       },
     },
-    users-permissions:{
+    "users-permissions":{
         config:{
             jwtSecret: env('JWT_SECRET'),
         },
