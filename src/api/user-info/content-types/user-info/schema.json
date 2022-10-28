@@ -1,0 +1,102 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_infos",
+  "info": {
+    "singularName": "user-info",
+    "pluralName": "user-infos",
+    "displayName": "User Info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "country": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ]
+    },
+    "address": {
+      "type": "text"
+    },
+    "state": {
+      "type": "string"
+    },
+    "zip_code": {
+      "type": "integer"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "user_info"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "theme_user": {
+      "type": "enumeration",
+      "enum": [
+        "Light",
+        "Dark"
+      ]
+    },
+    "device_registration": {
+      "type": "enumeration",
+      "enum": [
+        "Mobile",
+        "Table",
+        "Web",
+        "Desktop"
+      ]
+    },
+    "device_factory": {
+      "type": "enumeration",
+      "enum": [
+        "Ios",
+        "Android",
+        "Chrome",
+        "Windows",
+        "Mac",
+        "Linux",
+        "Other"
+      ]
+    }
+  }
+}

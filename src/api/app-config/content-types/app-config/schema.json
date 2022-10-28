@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_configs",
+  "info": {
+    "singularName": "app-config",
+    "pluralName": "app-configs",
+    "displayName": "App Config"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "font_title": {
+      "type": "string"
+    },
+    "font_data": {
+      "type": "string"
+    },
+    "color_background": {
+      "type": "string"
+    },
+    "color_title": {
+      "type": "string"
+    },
+    "color_text": {
+      "type": "string"
+    },
+    "color_icons": {
+      "type": "string"
+    },
+    "font_title_size": {
+      "type": "integer"
+    },
+    "font_data_size": {
+      "type": "integer"
+    },
+    "icon_size": {
+      "type": "integer"
+    },
+    "device": {
+      "type": "enumeration",
+      "enum": [
+        "mobile",
+        "web",
+        "tablet",
+        "desktop"
+      ]
+    },
+    "version_number": {
+      "type": "decimal"
+    },
+    "version_name": {
+      "type": "string"
+    }
+  }
+}
